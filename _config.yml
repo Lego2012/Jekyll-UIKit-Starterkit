@@ -1,0 +1,39 @@
+# Site settings
+title: "confidea - Webdesign - Redesign - CMS - SEO"
+sitename: "confidea - neue kunden über das internet"
+title-divider: " @ "
+email: leo.merkel@confidea.de
+author: "Leo Merkel"
+description: > # this means to ignore newlines until "baseurl:"
+  Confidea macht Webseiten, mit denen Sie neue Kunden über das Internet gewinnen. Von Confidea gemachte Webseiten sind sehr schnell, responsiv, sicher und für die Zukunft vorbereitet.
+keywords: generelles-keyword1, generelles-keyword2, generelles-keyword3, generelles-keyword4
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:9999" # the base hostname & protocol for your site
+twitter_username: Lemgo2000
+github_username:  Lego2012
+
+# Build settings
+markdown: kramdown
+
+source: ./app
+destination: ./build
+
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Gulp takes care of images and assets
+exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+# Don't import the folder structure
+exclude: []
+
+include: ['.htaccess', 'robots.txt', 'humans.txt']
+
+# `_config.build.yml` sets `future` and `show_drafts` to `false`
+future: true
+show_drafts: true

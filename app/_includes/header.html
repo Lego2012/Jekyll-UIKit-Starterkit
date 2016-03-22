@@ -1,0 +1,19 @@
+<header>
+  <div>
+    <a href="{{ site.baseurl }}/"><h1 class="hide-text show-image">{{ site.title }}</h1></a>
+  </div>
+
+  <nav>
+    <div>
+      <ul>
+        {% for node in site.data.nav %}
+        {% if page.url == node.url %}
+        <li class="active page-link navbar-item"><a href="{{ node.url }}" class="active">{{ node.title }}</a></li>
+        {% else %}
+        <li class="page-link navbar-item"><a href="{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>

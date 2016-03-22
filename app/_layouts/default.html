@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body {% if page.bodyClass %}class="{{page.bodyClass}}"{% else %}class="{{ page.title | downcase | replace: ' ', '-' | replace: ',', '', | replace: ':', '' | replace: '?', '' | replace: '’', '' | replace: 'ü', 'ue' | replace: 'Ü', 'ue' | replace: 'ö', 'oe' | replace: 'Ö', 'oe' | replace: 'ä', 'ae' | replace: 'Ä', 'ae' | replace: 'ß', 'ss' }}"{% endif %}>
+
+    {% include header.html %}
+
+    <div>
+
+      {{ content }}
+
+      {% include footer.html %}
+
+    </div>
+
+  <script src="{{ '/assets/js/foot.js' | prepend: site.baseurl }}"></script>
+
+</body>
+
+</html>

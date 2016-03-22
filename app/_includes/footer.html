@@ -1,0 +1,46 @@
+<footer>
+  <div>
+    <div>
+      <div>
+        <h4>Aktuelle Beiträge</h4>
+        <ul>
+          {% include blog-single.html %}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Die Links der Webseite</h4>
+        <nav>
+          <ul>
+            {% for node in site.data.nav %}
+            {% if page.url == node.url %}
+            <li class="active page-link"><a href="{{ node.url }}" class="active">{{ node.title }}</a></li>
+            {% else %}
+            <li class="page-link"><a href="{{ node.url }}">{{ node.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Wichtige Links</h4>
+        <nav>
+          <ul>
+            {% for node in site.data.nav-footer %}
+            {% if page.url == node.url %}
+            <li class="active page-link"><a href="{{ node.url }}" class="active">{{ node.title }}</a></li>
+            {% else %}
+            <li class="page-link"><a href="{{ node.url }}">{{ node.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div><!-- columns -->
+  </div><!-- container -->
+
+  <hr>
+
+  <p class="copyright">&#169; {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a></p>
+</footer>

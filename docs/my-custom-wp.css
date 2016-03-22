@@ -1,0 +1,510 @@
+html {
+	overflow-y: scroll;
+}
+
+/* Sticky Header */
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+/* This is where the magic happens. You need
+* to assign a fixed position in order for
+* everything else to work correctly.
+--------------------------------------------- */
+/*
+.site-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2000;
+}
+
+body {
+	margin-top: 12rem;
+}
+*/
+
+/* This will ensure your site looks correct
+* when the admin bar is displaying.
+--------------------------------------------- */
+body.admin-bar .site-header {
+	top: 28px /* Make this 32px if MP6 is installed */
+}
+
+/* Farben Überschriften */
+h1,h2,h3,h4,h5,h6 {
+	color: #5E5E5E;
+}
+
+/* Erste Überschrift
+--------------------------------------------- */
+.social-widget > div {
+	margin: 0 10px;
+}
+
+.geschichte .fl-rich-text h3 {
+	font-size: 2.4rem;
+}
+
+.widget.simple-social-icons h2 {
+	font-size: 2rem;
+}
+
+.sidebar-startseite p {
+	font-size:1.5rem;
+}
+
+.button-projektstart-startseite {
+	margin-top: -13px;
+}
+
+/* Menüpunkte Content Startseite
+--------------------------------------------- */
+span.fl-icon {
+	text-align: center;
+}
+
+.fl-callout-title span {
+	font-size: 2.4rem;
+}
+
+/* EZ Fat Footer
+--------------------------------------------- */
+#ez-fat-footer-container .ez-widget-area h4 {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.fat-footer-1,
+.fat-footer-2,
+.fat-footer-3,
+.fat-footer-4 {
+	margin: 0 20px;
+}
+
+.fat-footer-2 input {
+	display: inline-block !important;
+}
+
+.fat-footer-2 label,
+.fat-footer-2 label input {
+	font-size: 1.3rem;
+}
+
+
+#ez-fat-footer-container .ez-widget-area a,
+#ez-fat-footer-container .ez-widget-area li {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+#ez-fat-footer-4 ul li:last-child a {
+	border-right: none;
+}
+
+/* Newsletterform Anpassungen
+--------------------------------------------- */
+#form-wysija-2 .wysija-submit {
+	display: block;
+	width: 100%;
+	background-color: #245599;
+	color: #fff;
+	border: none;
+}
+
+#form-wysija-2 .wysija-submit:hover {
+	background-color: #fff;
+	color: #245599;
+}
+
+/* SEITE Dienstleistungen
+--------------------------------------------- */
+.callout-leo a {
+	line-height: 1.3;
+}
+
+/* SEITE PSD to Genesis
+--------------------------------------------- */
+h2.strikethrough {
+	text-align: center;
+	background: url(http://leomerkel.de/wp-content/uploads/2015/02/divider-1.jpg) repeat-x left center;
+}
+
+.strikethrough span {
+	background: #fff;
+	padding: 0 25px;
+}
+
+.page-id-317 .haken div {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.page-id-317 .haken div div span {
+	margin-top: 8px;
+}
+
+.page-id-317 .haken div div div h2 {
+	margin-bottom: 5px;
+}
+
+.page-id-317 .haken div div div h2 span {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* SEITE Mobile Responsive Design
+--------------------------------------------- */
+div.divider-mobile {
+	height: 10px;
+	text-align: center;
+	background: url(http://leomerkel.de/wp-content/themes/dynamik-gen/images/divider.jpg) repeat-x left center;
+}
+
+/* SEITE Full Service Design
+--------------------------------------------- */
+.callout-service i {
+	margin-top: 60px;
+}
+
+/* SEITE Fragen
+--------------------------------------------- */
+.fl-accordion-content p {
+	font-size: 1.4rem;
+}
+
+.fl-accordion-content ul li {
+	font-size: 1.4rem;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.page-id-246 .fl-accordion-content,
+.page-id-1046 .fl-accordion-item,
+.page-id-802 .fl-accordion-content,
+.page-id-744 .fl-accordion-content {
+	padding: 0 10px;
+	color: #333;
+}
+
+.fl-accordion-content p:first-child,
+.fl-accordion-content p:last-child {
+	padding-top: 15px;
+}
+
+.fl-accordion-button-icon {
+	color: #245599;
+}
+
+/* Kontaktform Widget
+--------------------------------------------- */
+.wpcf7-form {
+	margin-top: 2.1em;
+}
+
+.wpcf7-form p {
+	margin: 0 0 4px 0;
+}
+
+.wpcf7-form input,
+.wpcf7-form textarea,
+.enews input#subbox,
+.fl-accordion-item {
+	background: #fff;
+	border: 1px solid #245599;
+	color: #245599;
+	padding: 5px;
+}
+
+.wpcf7-form input,
+.wpcf7-form  textarea,
+.wpcf7-form input.wpcf7-submit  {
+	min-width: 100%;
+}
+
+input.wpcf7-form-control.wpcf7-submit input:hover[type="button"],
+input:hover[type="reset"],
+input:hover[type="submit"],
+.button:hover,
+.entry-content .button:hover {
+	background-color: #245599;
+	color: #fff;
+}
+
+.kontakt-leo {
+	margin: 50px auto !important;
+	border: 5px dashed #245599;
+	border-radius: 10px;
+}
+
+.kontakt-leo #ez-fat-footer-1 {
+	margin-top: 30px;
+}
+
+.kontakt-leo h3 {
+	font-size: 3rem;
+}
+
+.kontakt-leo #ez-fat-footer-1 p {
+	margin-bottom: 16px;
+}
+
+
+#datum-projektstart {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-size: 2.7rem;
+	font-weight: bolder;
+	background-color: #245599;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+#unterschrift-projektstart {
+	font-size: 4rem;
+}
+
+/* SEITE AGB und Impressum
+--------------------------------------------- */
+.page-id-76 .entry-content h1,
+.page-id-74 .entry-content h1,
+.page-id-421 .entry-content h1 {
+	margin: 20px 0;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.page-id-76 .entry-content h2,
+.page-id-74 .entry-content h2,
+.page-id-421 .entry-content h2 {
+	margin: 40px 0;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.page-id-76 .entry-content h3,
+.page-id-74 .entry-content h3,
+.page-id-421 .entry-content h3 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+/* SEITE Downloadbereich
+--------------------------------------------- */
+
+#menu-downloads {
+	padding: 0;
+}
+
+.downloadbereich-submenu h2 {
+	font-size: 1.5rem !important;
+}
+
+.downloadbereich-submenu ul li {
+	/* display: inline; */
+	margin: 0;
+	padding: 0;
+	/* background-color: rgba(36,85,153, 0.05); */
+	list-style: none;
+}
+
+.downloadbereich-submenu a {
+	font-size: 1.2rem;
+}
+
+.page-id-62 .fl-tabs-label.fl-tab-active {
+	border-color: #245599;
+	background-color: rgba(36,85,153, 0.2);
+}
+.fl-tabs-vertical .fl-tabs-label.fl-tab-active {
+	border-top-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 5px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right: medium none !important;
+	left: 1px;
+	padding: 11px 18px 11px 16px;
+}
+.fl-tabs-label.fl-tab-active {
+	background: none repeat scroll 0% 0% #FFF;
+	position: relative;
+	z-index: 1;
+}
+
+.fl-tabs-panel-content {
+	background-color: rgba(36,85,153, 0.2);
+}
+
+.widget.soliloquy h2 {
+	text-align: center;
+}
+
+.webdesign-formel-download ul li {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.webdesign-formel-download ul li i {
+	margin-right: 10px;
+}
+
+.webdesign-produkte ul li i {
+	color: #245599;
+}
+
+.fat-footer-3 .post-date {
+	display: block;
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+p#breadcrumbs {
+	display: inline-block;
+	font-family: 'Raleway',sans-serif;
+	font-size: 1.2rem;
+	color: #333;
+	padding: 0 5px;
+	margin-bottom: 3rem;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.content .post h1 {
+	font-size: 3rem;
+}
+
+.entry-content p {
+	margin: 0px 0px 15px;
+}
+
+.dienstleistungen-erforschen .fa-rocket {
+	float: right;
+}
+
+.content .page .dienstleistungen-erforschen h2 a {
+	float: left;
+	color: #fff;
+}
+
+.blog h2.entry-title {
+	background-color: rgba(36,85,153, 0.1);
+	padding: 1rem;
+}
+
+/* Social Sharing */
+.social_share_privacy {
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 1rem;
+}
+
+/* Galerie Tags */
+#envira-tags-filter-list-1654.envira-tags-filter-list li {
+	list-style-type: none;
+}
+
+/* Ultimate Members Konto */
+.um-account-side li {
+  background: #E9EEF5;
+}
+
+.archive-page ul li,
+.entry-content ul li,
+.dynamik-widget-area ul li {
+    list-style-type: none;
+}
+
+#recent-posts-3 span {
+  font-size: 1.2rem;
+  display: block;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+hr {
+	color: #DDDDDD;
+}
+
+h2.dienstleistungen a {
+	color: #fff !important;
+	width: 90% !important;
+	float: left !important;
+	text-align: center;
+}
+
+.fl-accordion {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+.fl-accordion-small .fl-accordion-button {
+    padding: 0 15px;
+}
+
+.fl-accordion-button span {
+	font-size: 1.2em;
+}
+
+.page-id-1046 .fl-accordion-button span {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.fl-accordion-button-label {
+	font-weight: bold;
+	font-size: 2rem;
+	/*color: grey;*/
+}
+
+.fl-accordion-content {
+	background-color: rgba(0, 84, 157, .2);
+}
+
+.fl-accordion-content ul {
+	padding-top: 1.5em !important;
+}
+
+.fl-accordion-content li {
+	font-size: 1.5rem !important;
+}
+
+.postid-2045 .fl-rich-text li {
+	background-color: rgba(233, 238, 245, 1);
+	border-radius: .5em;
+	padding: .7em;
+	margin-bottom: .7em;
+}
+
+.page-id-317 .fl-callout-has-icon i {
+  margin-top: 65px;
+}
+
+.fa-quote-right {
+  color: rgba(36, 85, 153, 1);
+}
+
+.fl-accordion-content li {
+  margin-bottom: 0.7rem !important;
+}
+
+.confidea-link {
+  position: relative;
+  top: 1.8rem;
+  cursor: default;
+}
+
+.wichtig {
+	font-size: 1.5em;
+	margin-right: .5em;
+}
+
+
+.strong-big {
+    background-color: yellow;
+    padding: 0.5em 0px;
+}
+
+.page-id-62 .fl-post-slider-title a {
+    color: #0037B4;
+}

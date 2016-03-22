@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de-DE" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}{{ site.title-divider }}{% endif %}{{ site.sitename }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" id="dynamik-viewport"/>
+
+  <link rel="canonical" itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:type" content="{{ page.type }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{{ site.title-divider }}{% endif %}{{ site.sitename }}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:site_name" content="{{ site.sitename }}" />
+  <meta property="og:image" content="/assets/images/confidea_logo/confidea_Logo_webdesign_300.jpg"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:description" content="{% if page.description-twitter %}{{ page.description-twitter }}{{ site.title-divider }}{% endif %}{{ page.description }}"/>
+  <meta name="twitter:title" content="{{ page.title }} - confidea"/>
+  <meta name="twitter:site" content="@Lemgo2000"/>
+  <meta name="twitter:domain" content="confidea"/>
+  <meta name="twitter:creator" content="@Lemgo2000"/>
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+
+  <meta name="author" itemprop="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
+
+  <meta name="keywords" itemprop="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+
+  <meta name="description" itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- This empty conditional comment hack is used to basically increase performance of your site -->
+  <!--[if IE]><![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu|Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <script src="{{ '/assets/js/head.js' | prepend: site.baseurl }}"></script>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
