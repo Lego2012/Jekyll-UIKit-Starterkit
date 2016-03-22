@@ -1,7 +1,6 @@
 # Leo's Jekyll Template mit UIKit powered by Gulp und Sass
-##### Inspiriert von [stefanimhoff.de](http://stefanimhoff.de/)
 
-### Aktuell ist der Branch `uikit`!
+### Aktuell ist der Branch `develop`!
 
 ## Installation
 Klone das Repository auf Deinen Computer und wechsle in den Projektordner. Starte:
