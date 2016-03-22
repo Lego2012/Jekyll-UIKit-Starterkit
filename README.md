@@ -28,3 +28,7 @@ $ gulp deploy
 - `gulp` baut die Assets zusammen, erstellt die Jekyll Site, kopiert die `bower-components/normalize-css/normalize.css` in `app/_assets/scss` und benennt sie in `_normalize.scss` um, damit sie von der `main.sass` korrekt importiert werden kann und startet den Entwicklungsserver. Abschließend wird der `watch` Task gestartet.
 - `gulp publish` kopiert und optimiert die Assets und startet ein Production-Build von Jekyll.
 - `gulp deploy` transferiert die generierten Dateien mit Rsync auf den Server.
+
+## Arbeiten
+
+Die Includes werden alle mit Jade geschrieben. Die Dateien dazu werden im Ordner `app/_jadefiles` gespeichert und dann mit dem Gulp-Task `jade` automatisch in den Ordner `/app/_includes/_jade-converts` als HTML-Dateien kopiert. Diese können dann in den Seiten mit `include` eingebunden werden (siehe Beispiel `index.html`).
