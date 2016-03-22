@@ -31,4 +31,10 @@ $ gulp deploy
 
 ## Arbeiten
 
-Die Includes werden alle mit Jade geschrieben. Die Dateien dazu werden im Ordner `app/_jadefiles` gespeichert und dann mit dem Gulp-Task `jade` automatisch in den Ordner `/app/_includes/_jade-converts` als HTML-Dateien kopiert. Diese können dann in den Seiten mit `include` eingebunden werden (siehe Beispiel `index.html`).
+Die Idee hinter den Jade-Dateien ist, dass die Webseiten wegen der Übersichtlichkeit im Prinzip nur aus Front Matter und Includes bestehen sollen.
+
+Die Includes werden alle mit Jade geschrieben, weil es schneller geht und die Wartung wegen der Übersichtlichkeit viel einfacher wird.
+
+Die Dateien dazu werden im Ordner `app/_jadefiles` gespeichert und dann mit dem Gulp-Task `jade` automatisch in den Ordner `/app/_includes/_jade-converts` als HTML-Dateien kopiert. Diese können dann in den Seiten mit `include` eingebunden werden (siehe Beispiel `index.html`).
+
+Im Ordner `/app/_data` befindet sich neben der Navigation auch eine Beispieldatei `beispiel.yml`. Hier sind individuelle Texte hinterlegt, die mit dem Liquid-Tag abgerufen werden können. Zum Beispiel: `{{ site.data.beispiel.header-title }}`. Dadurch wird die Wartung ebenfalls vereinfacht, weil die Texte in den Data-Dateien übersichtlich sind und einfach geändert werden können.

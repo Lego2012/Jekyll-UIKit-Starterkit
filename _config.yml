@@ -1,17 +1,17 @@
 # Site settings
-title: "confidea - Webdesign - Redesign - CMS - SEO"
-sitename: "confidea - neue kunden über das internet"
+title: "Dies ist der Titel der Webseite"
+sitename: "Dies ist der Name der Webseite"
 title-divider: " @ "
-email: leo.merkel@confidea.de
-author: "Leo Merkel"
+email: author@schreiben.com
+author: "Vorname Name"
 description: > # this means to ignore newlines until "baseurl:"
-  Confidea macht Webseiten, mit denen Sie neue Kunden über das Internet gewinnen. Von Confidea gemachte Webseiten sind sehr schnell, responsiv, sicher und für die Zukunft vorbereitet.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, culpa!
 keywords: generelles-keyword1, generelles-keyword2, generelles-keyword3, generelles-keyword4
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:9999" # the base hostname & protocol for your site
-twitter_username: Lemgo2000
-github_username:  Lego2012
+#twitter_username:
+#github_username:
 
 # Build settings
 markdown: kramdown

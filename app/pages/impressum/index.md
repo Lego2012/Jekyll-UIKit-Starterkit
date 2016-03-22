@@ -4,11 +4,11 @@ title: Impressum
 description:
 ---
 <address>
-  Leopold Merkel<br>
-  Buchhorststraße 13<br>
-  31860 Emmerthal<br>
-  Internet: www.confidea.de<br>
-  leo.merkel@confidea.de
+  Vorname Name<br>
+  Strasse und Nummer<br>
+  PLZ Ort<br>
+  Internet: www.webseite.de<br>
+  inhaber@webseite.de
 </address>
 
 # Impressum
