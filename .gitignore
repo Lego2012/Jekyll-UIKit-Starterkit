@@ -2,3 +2,6 @@ node_modules
 build
 app/_bower_components
 node_modules
+app/_assets/javascripts/foot
+app/_assets/scss/_normalize.scss
+app/_assets/javascripts/head

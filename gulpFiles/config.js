@@ -248,10 +248,10 @@ module.exports = {
   rsync: {
     src: production + '/**',
     options: {
-      destination: '/www/htdocs/w013c619/confidea-jekyll.leomerkel.de',
+      destination: '/',
       root: production,
-      hostname: 'w013c619.kasserver.com',
-      username: 'ssh-w013c619',
+      hostname: 'server',
+      username: 'user',
       incremental: true,
       progress: true,
       relative: true,
