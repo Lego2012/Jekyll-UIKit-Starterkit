@@ -1,5 +1,5 @@
 ---
-layout: agb
+layout: default
 title: Impressum
 description:
 ---
