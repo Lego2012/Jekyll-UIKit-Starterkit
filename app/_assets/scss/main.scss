@@ -1,4 +1,16 @@
-@import "0-plugins/-plugins-dir";
-@import "1-baseStyles/-baseStyles-dir";
-@import "2-modules/-modules-dir";
-@import "3-layouts/-layouts-dir";
+@import "../../_bower_components/uikit/scss/uikit-mixins.scss";
+
+// your custom code goes here, e.g. mixins, variables
+@import "eigene-variable";
+@import "eigene-mixins";
+
+@import "../../_bower_components/uikit/scss/uikit.scss";
+
+// Hier werden die Komponenten importiert
+@import "../../_bower_components/uikit/scss/components/autocomplete.scss";
+
+// Eigene Imports
+@import "imagehover.min";
+@import "baseStyles";
+@import "sprites";
+@import "layout-general";
