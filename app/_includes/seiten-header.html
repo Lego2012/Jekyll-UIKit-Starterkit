@@ -1,0 +1,8 @@
+{% if page.headline %}
+  <div class="lm-header uk-grid uk-align-center">
+    <div class="uk-width-1-1">
+      <h1> {{ page.headline }} </h1>
+      <h2> {% if page.subline %}{{ page.subline }}{% endif %} </h2>
+    </div>
+  </div>
+{% endif %}

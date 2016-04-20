@@ -14,6 +14,8 @@ module.exports = {
       },
       port: 9999,
       notify: false,
+      // Browser nicht automatisch öffnen
+      open: false,
       files: [
         developmentAssets + '/css/*.css',
         developmentAssets + '/js/*.js',
