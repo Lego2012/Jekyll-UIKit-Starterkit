@@ -1,3 +1,5 @@
+# Dieses Respository wird nicht weiter gepflegt, kann aber natürlich weiter genutzt werden
+
 # Leo's Jekyll Template mit UIKit powered by Gulp und Sass
 
 ### Aktuell ist der Branch `develop`!
